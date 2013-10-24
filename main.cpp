@@ -40,7 +40,7 @@ int main(void)
 {
     const int N = 40;     // N will be the lenght of our vector
 
-    vector<int> data(N);  // declares a vector data with lenght N
+    vector <int> data(N); // declares a vector data with lenght N
 
     // initializing the vector data
     initialize(data.begin(), data.end());
