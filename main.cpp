@@ -1,13 +1,14 @@
-// Homework 1
+// Coursera - Homework 1
+// author: Fernando E Correa
 // C++ Program Converted from C
 
 #include <iostream>  // using C++ io
 #include <vector>    // including vector
 
-const int N = 40;    // N will be the lenght of our vector
-
+// declaring the use of the namespace std
 using namespace std;
 
+// using templates to work with iterators to manipulate the vector
 template <class Titerator>
 inline void initialize (Titerator first, Titerator last)
 {
@@ -20,6 +21,7 @@ inline void initialize (Titerator first, Titerator last)
     }
 }
 
+// using templates to work with iterators to manipulate the vector
 template <class Titerator>
 inline int sum (Titerator first, Titerator last)
 {
@@ -36,7 +38,9 @@ inline int sum (Titerator first, Titerator last)
 
 int main(void)
 {
-    vector<int> data(N);        // declares a vector data with lenght N
+    vector<int> data(N);  // declares a vector data with lenght N
+
+    const int N = 40;     // N will be the lenght of our vector
 
     // initializing the vector data
     initialize(data.begin(), data.end());
