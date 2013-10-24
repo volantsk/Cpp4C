@@ -38,9 +38,9 @@ inline int sum (Titerator first, Titerator last)
 
 int main(void)
 {
-    vector<int> data(N);  // declares a vector data with lenght N
-
     const int N = 40;     // N will be the lenght of our vector
+
+    vector<int> data(N);  // declares a vector data with lenght N
 
     // initializing the vector data
     initialize(data.begin(), data.end());
